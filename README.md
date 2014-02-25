@@ -1,4 +1,6 @@
 Angle-Sensor-Android-App
 ========================
 
-Application for Android devices, which detects changes of position of the mobile device, and calls a given number when certain configuration is reached.
+An application for Android devices, which detects changes in position of the mobile device, and calls a given number, when a certain device position is reached. 
+
+Useful for setting up alarm based on position changes, ex. fall of trapdoor latch.
