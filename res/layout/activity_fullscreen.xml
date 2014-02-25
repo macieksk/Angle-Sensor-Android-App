@@ -1,0 +1,269 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity" 
+    android:fitsSystemWindows="true"
+    >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+<ScrollView 
+    android:id="@+id/main_scrollview"        
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+            	
+            	<ToggleButton
+            	    android:id="@+id/toggleButton1"
+            	    android:layout_width="match_parent"
+            	    android:layout_height="80dp"
+            	    android:minHeight="80dip"
+            	    android:text="ToggleButton" />
+                
+            </LinearLayout>
+            
+                        
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"  >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:lines="2"
+                    android:textColor="#AA11FF"
+                    android:text="'Below' Trigger\nAngles:" />
+
+                <EditText
+                    android:id="@+id/angleBottom0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="@string/default_angle" />
+
+                <EditText
+                    android:id="@+id/angleBottom1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="@string/default_angle" />
+
+                <EditText
+                    android:id="@+id/angleBottom2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="@string/default_angle" />
+
+            </LinearLayout>
+
+             <TextView
+                android:id="@+id/textAngleView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_gravity="center"
+                android:text="" 
+                android:textColor="#11FF11"                
+                />           
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+                
+                  <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:lines="2"
+                    android:textColor="#AA11FF"
+                    android:text="'Above' Trigger\nAngles:" />
+                  
+                  <EditText
+                      android:id="@+id/angleTop0"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:ems="10"
+                      android:inputType="numberSigned"
+                      android:text="@string/default_angle" />
+
+                <EditText
+                    android:id="@+id/angleTop1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="@string/default_angle" />
+
+                <EditText
+                    android:id="@+id/angleTop2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:text="@string/default_angle" />
+                              
+            </LinearLayout>
+            
+            
+                <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginBottom="0dp"
+    android:background="?android:attr/dividerVertical" />
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"  >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:lines="2"             
+                    android:textColor="#AA11FF"       
+                    android:text="Angle Check\nPeriod(s):" />
+
+                <EditText
+                    android:id="@+id/checkPeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"                   
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="30" />
+                
+                <TextView
+                    android:id="@+id/textMinDiff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:lines="2"
+                    android:textColor="#AA11FF"
+                    android:text="Repeat Call\nEvery(s):" />
+
+                <EditText
+                    android:id="@+id/minPhoneCallDiff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="30" />                
+            </LinearLayout>
+            
+                        
+            
+            
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"  >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="#AA11FF"                   
+                    android:text="Phone:" />
+
+                <EditText
+                    android:id="@+id/phoneToCall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="@string/default_phone" >
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+            
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buttonTestCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/test_call_button" />
+                
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:id="@+id/fullscreen_content_controls"
+                style="?buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+    
+</FrameLayout>
+                    

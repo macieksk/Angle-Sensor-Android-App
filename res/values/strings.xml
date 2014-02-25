@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Angle Sensor</string>
+    <string name="start_button">Start/Stop</string>
+    <string name="dummy_content">Angle Sensor\nAlarm</string>
+    <string name="test_call_button">Test Call</string>
+    <string name="default_angle">45</string>
+    <string name="default_phone">#</string>
+    <string name="angle_sensor_alarm_on">Angle Sensor Alarm On</string>
+    <string name="angle_sensor_alarm_off">Angle Sensor Alarm Off</string>
+    <string name="current_angles_">"Current Angles: "</string>
+
+</resources>
