@@ -51,7 +51,8 @@
             	    android:layout_width="match_parent"
             	    android:layout_height="80dp"
             	    android:minHeight="80dip"
-            	    android:text="ToggleButton" />
+            	    android:textOn="Sensor On" 
+            	    android:textOff="Sensor Off"/>
                 
             </LinearLayout>
             
